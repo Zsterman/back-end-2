@@ -24,7 +24,7 @@ module.exports = {
 
         let index = houses.findIndex((elem) => elem.id === +id)
 
-        if(houses[index].price - 10,000 < 0 && type === 'minus'){
+        if(houses[index].price - 10000 < 0 && type === 'minus'){
             res.status(400).send('cant go below zero')
         } 
         else if (type === 'minus') {
